@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: myfirstfont;
+    src: url(Fonts/Recoleta-Regular.otf);
+}
+body{
+    color: #568199;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url("photos/desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.coming_soon{
+    text-align: center;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.coming_soon h1{
+    font-size: 50px;
+    margin-bottom: 4%;
+    font-family: myfirstfont;
+    font-weight: thin;
+}
+.coming_soon p{
+    line-height: 1.8;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+}
+.content{
+    background-image: linear-gradient(to right, white, transparent);
+    height: 100vh;
+    overflow: auto;
+}
+.logo{
+    width: 200px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+@media only screen and (max-width: 600px){
+    .wrapper{
+        width: 100%;
+        height: 100vh;
+        background-image: url("photos/mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .coming_soon{
+        text-align: center;
+        width: 80%;
+        margin-top: 35%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .coming_soon h1{
+        font-size: 35px;
+        margin-bottom: 4%;
+
+    }
+    .coming_soon p{
+        line-height: 1.8;
+    }
+    .content{
+        height: 100vh;
+    }
+    .logo{
+        width: 150px;
+        display: block;
+        margin: auto;
+        margin-top: 15%;
+    }
+}
+@media only screen and (min-width: 601px){
+    .logo{
+        width: 200px;
+        margin-left: 4%;
+        margin-top: 4%;
+    }
+    .coming_soon{
+        text-align: center;
+        width: 50%;
+        margin-top: 30%;
+        margin-left: 15%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .coming_soon p{
+        width: 350px;
+        margin: auto;
+    }
+    .coming_soon{
+        text-align: center;
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .logo{
+        width: 200px;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+}
